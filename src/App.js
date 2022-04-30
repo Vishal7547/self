@@ -14,18 +14,19 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 
-import {HashRouter as Router,Route,Routes} from 'react-router-dom'
+import {Route,Routes} from 'react-router-dom'
 
 
 function App() {
   return (
     <div style={{backgroundColor:"black",color:"white"}}>
-      <Router>
+     
         <Home/>
 
     <Routes> 
-
-<Route exact path="/home" element={ <Homes />} > </Route>
+    <Route exact path="/self" element={ <Homes />} > </Route>
+    <Route exact path="/" element={ <Homes />} > </Route>
+<Route  path="/home" element={ <Homes />} > </Route>
 {/* <Route path="/about" element={<About/>} > </Route> */}
 {/* <Route path="/mySkill" element={<Myskill/>} > </Route> */}
 {/* <Route path="/project" element={<Project/>} > </Route> */}
@@ -37,7 +38,7 @@ function App() {
    <Project/>
    <Contact /> */}
  
-    </Router>
+   
    
     </div>
   );

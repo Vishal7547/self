@@ -24,18 +24,19 @@ function App() {
         <Home/>
 
     <Routes> 
-<Route path="*" element={<Error/>} > </Route>
+
 <Route exact path="/home" element={ <Homes />} > </Route>
 {/* <Route path="/about" element={<About/>} > </Route> */}
 {/* <Route path="/mySkill" element={<Myskill/>} > </Route> */}
 {/* <Route path="/project" element={<Project/>} > </Route> */}
 {/* <Route path="/contactUs" element={<Contact/>} > </Route> */}
+<Route path="*" element={<Error/>} > </Route>
 </Routes> 
    {/* <About />
    <Myskill />
    <Project/>
    <Contact /> */}
-  
+ 
     </Router>
    
     </div>

@@ -1,0 +1,38 @@
+.vb{
+   
+    width:140px;
+    height:140px;
+    margin-top:4px;
+    margin-bottom: 0pxs;
+    border-bottom: 4px solid orangered;
+}
+.remove{
+    border: none;
+    outline: none;
+    background-color:#e6e6e6;
+    color: #1b1b1b;;
+    border-radius: 20px;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+
+.remove:hover{
+    box-shadow: 6px 6px 15px rgba(53,53,53,0363);
+}
+
+@media (max-width:575px) {
+    .aboutTop{
+        margin-top: 20px;
+    }
+    .takeMargin{
+     margin-top: 10px;
+    
+    }
+    .remove{
+        margin: 0px auto;
+    }
+    .aboutCenter{
+        text-align: center !important;
+    }
+}

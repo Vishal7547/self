@@ -1,23 +1,43 @@
-import logo from './logo.svg';
+
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './Component/Navbar';
+import Error from './Component/Error'
+// import Section1 from './Component/Section1';
+// import About from './Component/About';
+// import Project from './Component/Project';
+// import Contact from './Component/Contact';
+// import Myskill from './Component/Myskill';
+import Homes from './Component/Homes';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
+
+
+import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{backgroundColor:"black",color:"white"}}>
+      <Router>
+        <Home/>
+
+    <Routes> 
+<Route path="*" element={<Error/>} > </Route>
+<Route exact path="/home" element={ <Homes />} > </Route>
+{/* <Route path="/about" element={<About/>} > </Route> */}
+{/* <Route path="/mySkill" element={<Myskill/>} > </Route> */}
+{/* <Route path="/project" element={<Project/>} > </Route> */}
+{/* <Route path="/contactUs" element={<Contact/>} > </Route> */}
+</Routes> 
+   {/* <About />
+   <Myskill />
+   <Project/>
+   <Contact /> */}
+  
+    </Router>
+   
     </div>
   );
 }

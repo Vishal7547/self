@@ -1,0 +1,21 @@
+.border{
+    background-color: orangered;
+    height:5px;
+    width:7vw;
+    margin:auto;
+}
+.borderChange{
+    border:none !important;
+    outline:none !important;
+   color:grey !important;
+
+}
+@media (max-width:767px) {
+    .contactCenter{
+        text-align: center;
+       
+    }
+    .topMt{
+        margin-top: 30px !important;
+    }
+}

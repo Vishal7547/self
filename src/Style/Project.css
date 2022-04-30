@@ -1,0 +1,14 @@
+.border{
+    background-color: orangered;
+    height:5px;
+    width:7vw;
+    margin:auto;
+}
+
+.backImage{
+background-image: url(../Images/SKILL.png);
+background-repeat: no-repeat;
+background-size: cover;
+padding:7vmax 0;
+margin-top: 10px;
+}

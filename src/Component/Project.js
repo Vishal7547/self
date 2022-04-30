@@ -11,7 +11,7 @@ function Project() {
     <div className='border'></div>
     <div className='row backImage'>
      <div className='container'>
-         <div className='row'>
+         <div className='row mx-5 dx' >
              <CardSlide />
          </div>
      </div>

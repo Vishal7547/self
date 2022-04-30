@@ -12,3 +12,22 @@ background-size: cover;
 padding:7vmax 0;
 margin-top: 10px;
 }
+
+.x-y-center{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  
+   
+}
+@media (max-width:425px) {
+    .dx{
+        margin:0 4rem 0 0 !important;
+    }
+}
+
+@media (max-width:320px) {
+    .dx{
+        margin:0 2rem 0 0 !important;
+    }
+}

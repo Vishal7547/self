@@ -5,3 +5,11 @@
 .decorationChange:hover{
 color:greenyellow;
 }
+@media (max-width:425px) {
+    .res{
+        width:100% !important ;
+        
+    }
+}
+
+
